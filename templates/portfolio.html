@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- Roboto Font & Icons Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='FAS/css/all.min.css') }}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='portfolio.css') }}"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logoName">Aung Kyaw Htay</div>
+      <nav class="navLinks" id="navLinks">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menuIcon" id="menuIcon">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+
+    <!-- textImgSection Section -->
+    <section id="textImg" class="textImgSection">
+      <div class="hero-content">
+        <h1>Hello, I am Aung Kyaw Htay.</h1>
+        <p>Computer Science Student | Web & Python Developer</p>
+        <div class="buttons">
+          <a href="#contact" class="btn btn-primary">Hire Me</a>
+          <a href="#projects" class="btn btn-secondary">View Work</a>
+        </div>
+      </div>
+      <div class="myImage">
+        <img
+          src="{{ url_for('static', filename='IMGS/FB_IMG_1694755902954.jpg') }}"
+          alt="Aung Kyaw Htay Profile"
+        />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="aboutSection">
+      <h2 class="aboutTitle">About Me</h2>
+      <p class="aboutText">
+        I studied Computer Science major from UCSS but now I am in UCSP (Final
+        Year). I love building useful web applications. My expertise lies in
+        Python backend development using Flask, alongside crafting clean
+        frontend layouts with HTML, CSS, and JavaScript. I also enjoy exploring
+        AI Tools and Digital Marketing to broaden my perspective.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skillSection">
+      <h2 class="skillTitle">My Skills</h2>
+      <div class="skillContainer">
+        <div class="skilCategory">
+          <h3>Frontend <i class="fa-solid fa-code"></i></h3>
+          <div class="skillIcons">
+            <span class="skillIcon"
+              ><i class="fa-brands fa-html5"></i> HTML</span
+            >
+            <span class="skillIcon"
+              ><i class="fa-brands fa-bootstrap"></i>Bootstrap</span
+            >
+            <span class="skillIcon"
+              ><i class="fa-brands fa-css3-alt"></i> CSS</span
+            >
+            <span class="skillIcon"
+              ><i class="fa-brands fa-js"></i> JavaScript</span
+            >
+          </div>
+        </div>
+        <div class="skilCategory">
+          <h3>Backend <i class="fa-solid fa-database"></i></h3>
+          <div class="skillIcons">
+            <span class="skillIcon"
+              ><i class="fa-brands fa-python"></i> Python</span
+            >
+            <span class="skillIcon"
+              ><i class="fa-solid fa-fire"></i> Flask</span
+            >
+          </div>
+        </div>
+        <div class="skilCategory">
+          <h3>DataBase <i class="fa-solid fa-database"></i></h3>
+          <div class="skillIcons">
+            <span class="skillIcon"
+              ><i class="fa-solid fa-database"></i> SQLite</span
+            >
+            <span class="skillIcon"
+              ><i class="fa-solid fa-database"></i> PostgreSQL</span
+            >
+          </div>
+        </div>
+        <div class="skilCategory">
+          <h3>Others <i class="fa-solid fa-angles-right"></i></h3>
+          <div class="skillIcons">
+            <span class="skillIcon"
+              ><i class="fa-solid fa-robot"></i> AI Tools</span
+            >
+            <span class="skillIcon"
+              ><i class="fa-solid fa-bullhorn"></i> Digital Marketing</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projectSection">
+      <h2 class="projectTitle">Projects</h2>
+      <div class="projectContainer">
+        <div class="projectCard">
+          <h3>
+            Student Management System <i class="fa-solid fa-book-open"></i>
+          </h3>
+          <p>
+            A web application built to manage student records and enrollment
+            processes efficiently.
+          </p>
+          <div class="spanLan">
+            <span>Python</span> <span>Flask</span> <span>SQLite</span>
+          </div>
+          <div class="projectLinks">
+            <a href="https://github.com/Aung-KyawHtay"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+        <div class="projectCard">
+          <h3>Barber Shop Website <i class="fa-solid fa-shop"></i></h3>
+          <p>
+            A simple landing page website for local businesses with services
+            listing.
+          </p>
+          <div class="spanLan"><span>HTML</span> <span>CSS</span></div>
+          <div class="projectLinks">
+            <a href="https://github.com/Aung-KyawHtay"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+        <div class="projectCard">
+          <h3>Personal Portfolio <i class="fa-regular fa-circle-user"></i></h3>
+          <p>
+            My interactive developer portfolio website showcasing my projects,
+            skills, and contact info.
+          </p>
+          <div class="spanLan">
+            <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+            <span>Python</span>
+          </div>
+          <div class="projectLinks">
+            <a href="https://github.com/Aung-KyawHtay"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+        <div class="projectCard">
+          <h3>
+            Sample Python Calculator <i class="fa-solid fa-calculator"></i>
+          </h3>
+          <p>
+            A simple GUI-based calculator application and It performs basic
+            arithmetic operations.
+          </p>
+          <div class="spanLan">
+            <span>Only Python</span>
+          </div>
+          <div class="projectLinks">
+            <a href="https://github.com/Aung-KyawHtay"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+        <div class="projectCard">
+          <h3>Our Little Universe <i class="fa-regular fa-heart"></i></h3>
+          <p>
+            A romantic interactive anniversary website featuring cinematic
+            animations, heartfelt messages, hidden surprises, and responsive
+            design.
+          </p>
+          <div class="spanLan">
+            <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+          </div>
+          <div class="projectLinks">
+            <a href="https://aung-kyawhtay.github.io/Our-Little-Universe"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+        <div class="projectCard">
+          <h3>
+            To Do List Or My Noted <i class="fa-regular fa-pen-to-square"></i>
+          </h3>
+          <p>
+            A simple task management application that helps users organize daily
+            tasks by them through an easy-to-use interface
+          </p>
+          <div class="spanLan">
+            <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+            <span>Python</span> <span>Flask</span> <span>SQLite</span>
+          </div>
+          <div class="projectLinks">
+            <a href="https://aungkyawhtay23.pythonanywhere.com"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contactSection">
+      <h2 class="contactTitle">Contact Me</h2>
+      <div class="contactAddress">
+        <p><i class="fa-solid fa-phone"></i> Phone: 09253953418</p>
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          Email:
+          <a href="mailto:aungkyawh131941@gmail.com"
+            >aungkyawh131941@gmail.com</a
+          >
+        </p>
+        <p>
+          <i class="fa-brands fa-github"></i>
+          <a href="https://github.com/Aung-KyawHtay"
+            >Aung-KyawHtay/github.com</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Aung Kyaw Htay. All Rights Reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='portfolio.js') }}"></script>
+  </body>
+</html>
